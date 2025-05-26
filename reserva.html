@@ -1,1 +1,71 @@
 <!-- reserva.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reserva - GAUCHO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="bg-dark text-white">
+
+  <header class="d-flex justify-content-between align-items-center p-3 border-bottom border-light">
+    <div>
+      <a href="index.html" class="text-white me-4">Inicio</a>
+      <a href="menu.html" class="text-white me-4">Menú</a>
+      <a href="nosotros.html" class="text-white">Contacto</a>
+    </div>
+    <h1 class="h3 m-0 text-end">GAUCHO</h1>
+  </header>
+
+  <main class="container my-5">
+    <h2 class="text-center mb-4">Reservá tu mesa</h2>
+    <form class="bg-light text-dark p-4 rounded">
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" placeholder="Tu nombre" />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com" />
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" placeholder="Ej: 11 1234 5678" />
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha</label>
+        <input type="date" class="form-control" id="fecha" />
+      </div>
+      <div class="mb-3">
+        <label for="hora" class="form-label">Hora</label>
+        <input type="time" class="form-control" id="hora" />
+      </div>
+      <div class="mb-3">
+        <label for="personas" class="form-label">Cantidad de personas</label>
+        <input type="number" class="form-control" id="personas" min="1" max="20" />
+      </div>
+      <button type="submit" class="btn btn-primary">Reservar</button>
+    </form>
+
+    <div class="row mt-5">
+      <div class="col-md-4">
+        <img src="https://www.freepik.com/premium-photo/chef-cooking-modern-industrial-kitchen_21807011.htm" alt="Chef cocinando en cocina industrial moderna" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-4">
+        <img src="https://www.pexels.com/es-es/foto/chefs-profesionales-trabajando-en-la-cocina-de-un-restaurante-30120987/" alt="Chefs profesionales trabajando en la cocina de un restaurante" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-4">
+        <img src="https://es.dreamstime.com/cocina-profesional-dos-chefs-preparan-un-delicioso-plato-en-restaurante-image252949534" alt="Cocina profesional: dos chefs preparan un delicioso plato en un restaurante" class="img-fluid rounded" />
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-secondary text-center py-3 mt-auto">
+    <p class="m-0">Gracias por confiar en nosotros</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
