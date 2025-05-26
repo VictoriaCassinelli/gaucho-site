@@ -1,1 +1,33 @@
 /* style.scss */
+$primary-bg: #1c1c1c;
+$secondary-bg: #333;
+$text-color: #ffffff;
+
+body {
+  background-color: $primary-bg;
+  color: $text-color;
+}
+
+header {
+  background-color: $secondary-bg;
+  a {
+    color: $text-color;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+footer {
+  background-color: $secondary-bg;
+}
+
+form {
+  background-color: #f8f9fa;
+  color: #212529;
+}
+
+img {
+  margin-top: 20px;
+}
