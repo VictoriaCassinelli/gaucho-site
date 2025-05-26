@@ -1,57 +1,24 @@
-/* style.css */
-$primary-bg: #1c1c1c;
-$secondary-bg: #333;
-$text-color: #ffffff;
-
 body {
-  background-color: $primary-bg;
-  color: $text-color;
+  background-color: #0d0d0d; // negro casi puro
+  color: #ffffff;
 }
 
 header {
-  background-color: $secondary-bg;
+  background-color: #111;
   a {
-    color: $text-color;
+    color: #ffffff;
     text-decoration: none;
+    transition: color 0.3s;
+
     &:hover {
-      text-decoration: underline;
+      color: #ffc107; // amarillo suave (Bootstrap warning)
     }
   }
 }
 
 footer {
-  background-color: $secondary-bg;
-}
-$primary-bg: #1c1c1c;
-$secondary-bg: #333;
-$text-color: #ffffff;
-
-body {
-  background-color: $primary-bg;
-  color: $text-color;
+  background-color: #111;
+  color: #ffffff;
 }
 
-header {
-  background-color: $secondary-bg;
-  a {
-    color: $text-color;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-}
-
-footer {
-  background-color: $secondary-bg;
-}
-
-form {
-  background-color: #f8f9fa;
-  color: #212529;
-}
-
-img {
-  margin-top: 20px;
-}
 
