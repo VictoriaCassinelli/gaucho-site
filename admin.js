@@ -19,6 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <th>Fecha</th>
           <th>Hora</th>
           <th>Personas</th>
+          <th>Acción</th>
         </tr>
       </thead>
       <tbody>
@@ -34,6 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         <td>${reserva.fecha}</td>
         <td>${reserva.hora}</td>
         <td>${reserva.personas}</td>
+        <td>
+          <button class="btn btn-sm btn-danger" onclick="eliminarReserva(${index})">Eliminar</button>
+        </td>
       </tr>
     `;
   });
@@ -41,3 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
   html += "</tbody></table>";
   tabla.innerHTML = html;
 });
+
+function eliminarReserva(index) {
+  const reservas = JSON.parse(localStorage.getItem("reservas")) || [];
+  reservas.splice(index, 1);
+  localStorage.setItem("reservas", JSON.stringify(reservas));
+  location.reload(); // recarga para actualizar la tabla
+}
