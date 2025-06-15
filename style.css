@@ -1,24 +1,59 @@
 body {
-  background-color: #0d0d0d; // negro casi puro
+  background-color: #121212; // fondo oscuro
   color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-  background-color: #111;
-  a {
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .nav-links a {
     color: #ffffff;
     text-decoration: none;
-    transition: color 0.3s;
+    font-weight: 500;
+    transition: color 0.3s ease, transform 0.2s ease;
 
     &:hover {
-      color: #ffc107; // amarillo suave (Bootstrap warning)
+      color: #ffc107;
+      transform: scale(1.05);
     }
   }
 }
 
-footer {
-  background-color: #111;
-  color: #ffffff;
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
 }
 
+// Responsive
+@media (max-width: 768px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
 
+    .nav-links {
+      margin-top: 10px;
+
+      a {
+        display: block;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+  main {
+    text-align: center;
+  }
+}
