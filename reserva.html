@@ -1,12 +1,16 @@
 <!-- reserva.html -->
+<!-- reserva.html -->
 <!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Reservá tu mesa en Gaucho, restaurante de carne argentina tradicional.">
+  <meta name="keywords" content="reservas, restaurante, gaucho, carne, parrilla argentina">
   <title>Reserva - GAUCHO</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/style.css" />
+
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body class="bg-dark text-white">
 
@@ -14,57 +18,61 @@
     <div>
       <a href="index.html" class="text-white me-4">Inicio</a>
       <a href="menu.html" class="text-white me-4">Menú</a>
-      <a href="nosotros.html" class="text-white">Contacto</a>
+      <a href="nosotros.html" class="text-white">Nosotros</a>
     </div>
     <h1 class="h3 m-0 text-end">GAUCHO</h1>
   </header>
 
-  <main class="container my-5">
+  <main class="container my-5 fadeIn">
     <h2 class="text-center mb-4">Reservá tu mesa</h2>
+
     <form id="formReserva" class="bg-light text-dark p-4 rounded">
-  <div class="mb-3">
-    <label for="nombre" class="form-label">Nombre completo</label>
-    <input type="text" class="form-control" id="nombre" required />
-  </div>
-  <div class="mb-3">
-    <label for="email" class="form-label">Correo electrónico</label>
-    <input type="email" class="form-control" id="email" required />
-  </div>
-  <div class="mb-3">
-    <label for="telefono" class="form-label">Teléfono</label>
-    <input type="tel" class="form-control" id="telefono" required />
-  </div>
-  <div class="mb-3">
-    <label for="fecha" class="form-label">Fecha</label>
-    <input type="date" class="form-control" id="fecha" required />
-  </div>
-  <div class="mb-3">
-    <label for="hora" class="form-label">Hora</label>
-    <input type="time" class="form-control" id="hora" required />
-  </div>
-  <div class="mb-3">
-    <label for="personas" class="form-label">Cantidad de personas</label>
-    <input type="number" class="form-control" id="personas" min="1" max="20" required />
-  </div>
-  <button type="submit" class="btn btn-primary">Reservar</button>
-</form>
+      <div class="mb-3">
+        <label for="nombre" class="form-label">Nombre completo</label>
+        <input type="text" class="form-control" id="nombre" required />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Correo electrónico</label>
+        <input type="email" class="form-control" id="email" required />
+      </div>
+      <div class="mb-3">
+        <label for="telefono" class="form-label">Teléfono</label>
+        <input type="tel" class="form-control" id="telefono" required />
+      </div>
+      <div class="mb-3">
+        <label for="fecha" class="form-label">Fecha</label>
+        <input type="date" class="form-control" id="fecha" required />
+      </div>
+      <div class="mb-3">
+        <label for="hora" class="form-label">Hora</label>
+        <input type="time" class="form-control" id="hora" required />
+      </div>
+      <div class="mb-3">
+        <label for="personas" class="form-label">Cantidad de personas</label>
+        <input type="number" class="form-control" id="personas" min="1" max="20" required />
+      </div>
+      <button type="submit" class="btn btn-primary">Reservar</button>
+    </form>
 
-<!-- Mensaje de confirmación -->
-<div id="mensajeConfirmacion" class="alert alert-success mt-4 d-none" role="alert">
-  En breve nos contactamos con vos.
-</div>
-
-  
+    <div id="mensajeConfirmacion" class="alert alert-success mt-4 d-none" role="alert">
+      En breve nos contactamos con vos.
+    </div>
 
     <div class="row mt-5">
       <div class="col-md-4">
-        <img src="https://www.freepik.com/premium-photo/chef-cooking-modern-industrial-kitchen_21807011.htm" alt="Chef cocinando en cocina industrial moderna" class="img-fluid rounded" />
+        <img src="https://cdn.pixabay.com/photo/2016/10/27/22/52/kitchen-1776546_1280.jpg"
+             alt="Chef cocinando"
+             class="img-fluid rounded shadow-sm" />
       </div>
       <div class="col-md-4">
-        <img src="https://www.pexels.com/es-es/foto/chefs-profesionales-trabajando-en-la-cocina-de-un-restaurante-30120987/" alt="Chefs profesionales trabajando en la cocina de un restaurante" class="img-fluid rounded" />
+        <img src="https://cdn.pixabay.com/photo/2015/04/10/00/41/cook-715803_1280.jpg"
+             alt="Cocineros en acción"
+             class="img-fluid rounded shadow-sm" />
       </div>
       <div class="col-md-4">
-        <img src="https://es.dreamstime.com/cocina-profesional-dos-chefs-preparan-un-delicioso-plato-en-restaurante-image252949534" alt="Cocina profesional: dos chefs preparan un delicioso plato en un restaurante" class="img-fluid rounded" />
+        <img src="https://cdn.pixabay.com/photo/2020/04/28/10/53/kitchen-5104054_1280.jpg"
+             alt="Cocina profesional"
+             class="img-fluid rounded shadow-sm" />
       </div>
     </div>
   </main>
@@ -73,6 +81,6 @@
     <p class="m-0">Gracias por confiar en nosotros</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
